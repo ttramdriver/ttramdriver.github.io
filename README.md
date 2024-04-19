@@ -1,16 +1,23 @@
-### Hi there 👋
+### Me
 
-<!--
-**slodkipiesio/slodkipiesio** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+so,
 
-Here are some ideas to get you started:
+me is femboy :3
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+me is bisexual
+
+me pronouns is he/him
+
+me is from Poland (who wouldve guessed that a bisexual femboy is from Poland lol)
+
+me trying to learn C# and C++ because me hobby is gamedev
+
+
+me username lore:
+- "The™️" is just a prefix i took from "**The™️** Hideout" (a groupchat i *was* in),
+it originated because all of us didnt know what to name our server so we all just had an argument
+and i started to place the trademark symbol as "The Hideout™️" but someone missplaced it and it came out as "The™️ Hideout"
+- and "J" also originates from "The™️ Hideout", people there didnt know how to pronounce my earlier nickname,
+which was "Janeczek" and "Janeczek" is basically a cuter version of my real name, "Jan", so they jokingly asked me to change the nickname to "J",
+so i firstly jokingly set my nickname to "J" and then i went with that and it evolved to "The™️ J"
+
