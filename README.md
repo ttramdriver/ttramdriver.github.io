@@ -21,3 +21,6 @@ and i started to place the trademark symbol as "The Hideout™️" but someone m
 which was "Janeczek" and "Janeczek" is basically a cuter version of my real name, "Jan", so they jokingly asked me to change the nickname to "J",
 so i firstly jokingly set my nickname to "J" and then i went with that and it evolved to "The™️ J"
 
+![p of the p](https://github.com/slodkipiesio/slodkipiesio/assets/95749943/7732ed59-e863-415c-b0be-ebdf98941f3a)
+
+me pfp and this doodle made by ablay (thank you so muchhhh i love them doodles :3)
