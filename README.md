@@ -1,6 +1,6 @@
 # Me
 
-![p of the p](https://github.com/slodkipiesio/slodkipiesio/assets/95749943/a4b7ecb6-901c-4080-9a41-221f92d43ea3)
+![smol](https://github.com/slodkipiesio/slodkipiesio/assets/95749943/464daaef-2a73-4577-b027-bf9aeffe9cbf)
 
 so,
 
