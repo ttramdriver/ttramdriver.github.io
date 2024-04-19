@@ -1,7 +1,6 @@
 # Me
 
-![image](https://github.com/slodkipiesio/slodkipiesio/assets/95749943/b6b7184d-5cbd-4d52-9756-563e8687cf77)
-
+![p of the p](https://github.com/slodkipiesio/slodkipiesio/assets/95749943/a4b7ecb6-901c-4080-9a41-221f92d43ea3)
 
 so,
 
