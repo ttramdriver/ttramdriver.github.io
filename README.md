@@ -12,10 +12,10 @@ me pronouns is he/him
 
 me is from Poland (who wouldve guessed that a bisexual femboy is from Poland lol)
 
-me trying to learn C# and C++ because me hobby is gamedev
+me trying to learn GDScript and C++ because me hobby is gamedev
 
 
-me username lore (I added this just because i got asked for the meaning of my username like 7 times): 
+me username lore (I added this just because i got asked for the meaning of my username like 8 times): 
 - "The™️" is just a prefix i took from "**The™️** Hideout" (a groupchat i *was* in),
 it originated because all of us didnt know what to name our server so we all just had an argument
 and i started to place the trademark symbol as "The Hideout™️" but someone missplaced it and it came out as "The™️ Hideout"
