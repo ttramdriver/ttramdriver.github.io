@@ -4,7 +4,7 @@
 ##
 ### so,
 
-me is femboy :3
+me is :3
 
 me is bisexual
 
