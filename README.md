@@ -4,15 +4,15 @@
 ##
 ### so,
 
-me is :3
+trans girl :3
 
-me is bisexual
+bisexual
 
-me pronouns is he/him
+he/her
 
-me is from Poland (who wouldve guessed that a bisexual femboy is from Poland lol)
+From Poland (who wouldve guessed that a bisexual ~~femboy~~ trans virl is from Poland lol)
 
-me trying to learn GDScript and C++ because me hobby is gamedev
+trying to learn GDScript and C++ because me hobby is gamedev
 
 
 me username lore (I added this just because i got asked for the meaning of my username like 8 times): 
