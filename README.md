@@ -10,7 +10,7 @@ bisexual
 
 he/her
 
-From Poland (who wouldve guessed that a bisexual ~~femboy~~ trans virl is from Poland lol)
+From Poland (who wouldve guessed that a bisexual ~~femboy~~ trans girl is from Poland lol)
 
 trying to learn GDScript and C++ because me hobby is gamedev
 
