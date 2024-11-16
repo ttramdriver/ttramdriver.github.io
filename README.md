@@ -8,7 +8,7 @@ trans girl :3
 
 bisexual
 
-he/her
+she/her
 
 From Poland (who wouldve guessed that a bisexual ~~femboy~~ trans girl is from Poland lol)
 
