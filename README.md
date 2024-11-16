@@ -22,7 +22,7 @@ From Poland (who wouldve guessed that a bisexual ~~femboy~~ trans girl is from P
 
 ##
 
-me username lore (I added this just because i got asked for the meaning of my username like 8 times): 
+me username lore (I added this just because i got asked for the reasoning of my username like 8 times): 
 - "The™️" is just a prefix i took from "**The™️** Hideout" (a groupchat i am in),
 the "™️" after "The" originated from of us not knowing what to name our server so we all just had an argument
 and i started to place the trademark symbol as "The Hideout™️" but someone missplaced it and it came out as "The™️ Hideout"
