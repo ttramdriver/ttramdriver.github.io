@@ -14,11 +14,11 @@ From Poland (who wouldve guessed that a bisexual ~~femboy~~ trans girl is from P
 
 
 ## currently learning:
-- ~~C#~~ (discontinued as i dont use Unity anymore)
 - GDScript (Hobby)
-- C++ (School)
-- C (Arduino, School)
 - Python (School)
+- C (Arduino, School)
+- C++ (School)
+- ~~C#~~ (discontinued as i dont use Unity anymore)
 
 ##
 
