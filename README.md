@@ -25,7 +25,7 @@ the "™️" after "The" originated from of us not knowing what to name our serv
 and i started to place the trademark symbol as "The Hideout™️" but someone missplaced it and it came out as "The™️ Hideout"
 - and "J" also originates from "The™️ Hideout", people there didnt know how to pronounce my earlier nickname ("Jankeczek"), so they jokingly asked me to change the nickname to "J",
 so i firstly jokingly set my nickname to "J" and then i rolled with it and it evolved to "The™️ J"
-- thing, as "Jankeczek" comes from my guy-name you can make the abbreviation that it comes from "maja"/"majka"/"majcia" and thet "the m" and "the a" didnt stick to me
+- thing, as "Jankeczek" comes from my guy-name you can make the abbreviation that it comes from "maja"/"majka"/"majcia" and thet "the m" and "the a" didnt stick to me, though i dont have a big of a problem with my guy-name, at least not now
 
 
 pfp and the earlier doodle made by ablay (thank you so muchhhh i love them doodles :3)
