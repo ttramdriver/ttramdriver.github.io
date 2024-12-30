@@ -19,17 +19,15 @@ a:visited
     color: rgb(172, 0, 172);   
 }
 
-.sg
-{
-    color: gray;
-    font-size: smaller;
-}
-
-#csharp, #linetr
+.gr, .linetr, .g
 {
     color: gray;
 }
-#linetr
+.linetr
 {
     text-decoration: line-through;
+}
+.sg
+{
+    font-size: smaller;
 }
