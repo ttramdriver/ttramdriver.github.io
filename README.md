@@ -29,6 +29,7 @@ so i firstly jokingly set my nickname to "J" and then i rolled with it and it ev
 
 
 pfp by @singularitttt on twitter (pixelized using https://giventofly.github.io/pixelit/#tryit)
+
 earlier doodle made by ablay on discord (thank you so muchhhh i love them doodles :3)
 
 ##
