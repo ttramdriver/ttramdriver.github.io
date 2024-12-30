@@ -28,6 +28,7 @@ so i firstly jokingly set my nickname to "J" and then i rolled with it and it ev
 - thing, as "Jankeczek" comes from my guy-name you can make the abbreviation that it comes from "maja"/"majka"/"majcia" and thet "the m" and "the a" didnt stick to me. Though i dont have a big of a problem with my guy-name, at least not now
 
 
-pfp and the earlier doodle made by ablay (thank you so muchhhh i love them doodles :3)
+pfp by @singularitttt on twitter
+earlier doodle made by ablay on discord (thank you so muchhhh i love them doodles :3)
 
 ##
