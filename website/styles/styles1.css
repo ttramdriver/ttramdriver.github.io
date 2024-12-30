@@ -5,8 +5,31 @@
     color: white;
 }
 
+section
+{
+    padding: 25px;
+}
+
+a
+{
+    color: lightskyblue;
+}
+a:visited
+{
+    color: rgb(172, 0, 172);   
+}
+
 .sg
 {
     color: gray;
-    size: 7px;
+    font-size: smaller;
+}
+
+#csharp, #litr
+{
+    color: gray;
+}
+#litr
+{
+    text-decoration: line-through;
 }
