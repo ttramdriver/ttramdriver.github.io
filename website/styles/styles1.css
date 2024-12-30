@@ -7,7 +7,7 @@
 
 section
 {
-    margin: 25px;
+    margin: 50px;
 }
 
 a
@@ -25,11 +25,11 @@ a:visited
     font-size: smaller;
 }
 
-#csharp, #litr
+#csharp, #linetr
 {
     color: gray;
 }
-#litr
+#linetr
 {
     text-decoration: line-through;
 }
