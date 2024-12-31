@@ -1,13 +1,18 @@
 *
 {
-    font-family: sans-serif;
+    font-family: Calibri;
     background-color: black;
     color: white;
 }
 
 section
 {
-    margin: 16%;
+    margin: 50px;
+}
+
+h2, h3
+{
+    font-family: Arial;
 }
 
 a
@@ -22,6 +27,7 @@ a:visited
 .gr, .linetr, .sg
 {
     color: gray;
+    font-family: monospace;
 }
 .linetr
 {
