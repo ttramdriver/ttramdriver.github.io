@@ -43,7 +43,7 @@ nav
 {
     float:right;
     width: 25px;
-    transition: transform 0.2s linear;
+    transition: transform 0.25s linear;
 }
 #trans:hover, #bi:hover, #PL:hover
 {
