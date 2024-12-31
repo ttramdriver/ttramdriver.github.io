@@ -1,0 +1,53 @@
+*
+{
+    color: white;
+    background-color: black;
+    font-family: sans-serif;
+}
+
+section
+{
+    margin: 50px;
+}
+
+#hii
+{
+    width: 25px;
+}
+
+#cupcake1, #cupcake2
+{
+    height: 360px;
+}
+#cupcake1
+{
+    margin-left: 16%;
+    margin-right: 2%;
+}
+#cupcake2
+{
+    margin-right: 16%;
+    margin-left: 2%;
+}
+
+a
+{
+    color: lightskyblue;
+}
+a:visited
+{
+    color: rgb(172, 0, 172);   
+}
+
+.gr, .linetr, .sg, i
+{
+    color: gray;
+}
+.linetr
+{
+    text-decoration: line-through;
+}
+.sg
+{
+    font-size: smaller;
+}
