@@ -16,6 +16,36 @@ h2, h3
     font-family: Arial;
 }
 
+#trans, #bi, #PL
+{
+    float:right;
+    width: 25px;
+    transition: transform 0.2s linear;
+}
+#trans:hover, #bi:hover, #PL:hover
+{
+    transform: rotate(360deg) scale(2.5);
+}
+#trans
+{
+    margin-top: -34px;
+    margin-right: 25px;
+    rotate: 10deg z;
+}
+#bi
+{
+    rotate: 45deg z;
+    margin-top: -15px;
+    margin-right: -15px;
+}
+#PL
+{
+    rotate: 80deg z;
+    margin-top: 19px;
+    margin-right: -58px;
+}
+
+
 #hii
 {
     width: 25px;
