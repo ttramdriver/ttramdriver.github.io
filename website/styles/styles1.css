@@ -7,9 +7,27 @@
     background-color: black;
 }
 
+@media (pointer: coarse)
+{
+    section
+    {
+        display: block;
+    }
+    #mensec
+    {
+        display: flex;
+    }
+}
+@media (pointer: fine)
+{
+    section
+    {
+        display: flex;
+    }
+}
+
 section
 {
-    display: flex;
     margin-top: 25px;
     margin: 50px;
     margin-left: 90px;
