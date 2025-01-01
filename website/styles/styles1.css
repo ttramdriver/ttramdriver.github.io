@@ -1,8 +1,21 @@
+/* i have no idea whats going on here */
+
 *
 {
     font-family: Calibri;
-    background-color: black;
     color: white;
+    background-color: black;
+}
+
+section
+{
+    display: flex;
+    margin: 50px;
+    margin-left: 80px;
+}
+#padleft
+{
+    padding-left: 25px;
 }
 
 h2, h3
@@ -33,15 +46,66 @@ a:visited
     font-size: smaller;
 }
 
+#hmaside
+{
+    position:fixed;
+    float: left;
+    background-color: rgb(196, 196, 196);
+    width: 70px;
+    height: 100%;
+    margin-top: -50px;
+    margin-left: -88px;
+}
+#menu
+{
+    background-color: rgb(196, 196, 196);
+    display: block;
+    border: none;
+}
 nav
 {
-    margin: 0px;
-    background-color: rgb(66, 66, 66);
+    visibility: hidden;
+    background-color: rgb(196, 196, 196);
+}
+#hambicon
+{
+    background-color: rgb(196, 196, 196);
+    width: 45px;
+    margin-top: -3px;
+    margin-left: 12px;   
+}
+#menu nav
+{
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 200px;
+    height: 100%;
+    transition: 0.3s;
+}
+#hambinput
+{
+    visibility: hidden;
+}
+#hambinput:checked + #menu nav
+{
+    visibility: visible;
+    left: 0;
+}
+#hambinput:checked ~ .overlay
+{
+    visibility: visible;
+    opacity: 0.4;
 }
 
+#flags
+{
+    margin-top: -40px;
+    float:right;
+}
 #trans, #bi, #PL
 {
-    float:right;
     width: 25px;
     transition: transform 0.25s linear;
 }
@@ -52,23 +116,18 @@ nav
 #trans
 {
     margin-top: -34px;
-    margin-right: 25px;
+    margin-right: 28px;
     rotate: 10deg z;
 }
 #bi
 {
     rotate: 45deg z;
     margin-top: -16px;
-    margin-right: -18px;
+    margin-right: -15px;
 }
 #PL
 {
     rotate: 80deg z;
     margin-top: 19px;
-    margin-right: -56px;
-}
-
-section
-{
-    margin: 50px
+    margin-right: -53px;
 }
