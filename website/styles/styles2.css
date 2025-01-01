@@ -42,6 +42,10 @@ a:visited
     text-decoration: none;
     text-align: center;
 }
+#tMENU
+{
+    font-size: 33px;
+}
 
 .gr, .linetr, .sg
 {
@@ -91,7 +95,7 @@ nav
     position: fixed;
     top: 0;
     left: -250px;
-    width: 200px;
+    width: 250px;
     height: 100%;
     transition: 0.3s;
 }
