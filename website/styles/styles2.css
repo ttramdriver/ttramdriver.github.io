@@ -7,6 +7,22 @@
     background-color: black;
 }
 
+@media (pointer: coarse)
+{
+    #menu nav
+    {
+        width: 100vw;
+    }
+    #tMENU
+    {
+        font-size: 45px;
+    }
+    .menutext, .menutext:visited
+    {
+        font-size: 30px;
+    }
+}
+
 section
 {
     margin-top: 25px;

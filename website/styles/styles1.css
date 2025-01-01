@@ -17,17 +17,23 @@
     {
         display: flex;
     }
-}
-@media (pointer: fine)
-{
-    section
+    #menu nav
     {
-        display: flex;
+        width: 100vw;
+    }
+    #tMENU
+    {
+        font-size: 45px;
+    }
+    .menutext, .menutext:visited
+    {
+        font-size: 30px;
     }
 }
 
 section
 {
+    display: flex;
     margin-top: 25px;
     margin: 50px;
     margin-left: 90px;
