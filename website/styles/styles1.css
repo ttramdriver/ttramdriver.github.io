@@ -191,6 +191,7 @@ nav
 }
 #trans, #bi, #PL
 {
+    background-color: transparent;
     position:absolute;
     display: flex;
     width: 25px;
