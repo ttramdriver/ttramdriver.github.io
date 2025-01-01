@@ -48,6 +48,10 @@
     {  
         top: 70px
     }
+    #welcsec
+    {
+        margin-top: -50px;
+    }
 }
 @media (pointer: fine)
 {
@@ -72,10 +76,6 @@
     {
         margin-top: -3px;
         margin-left: 12px;   
-    }
-    #welcsec
-    {
-        margin-top: -50px;
     }
     #hambinput:checked + #menu nav
     {
@@ -216,6 +216,10 @@ nav
 }
 
 
+#gi
+{
+    color: gray;
+}
 
 #hii
 {
