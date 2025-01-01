@@ -19,11 +19,15 @@
     }
     #tMENU
     {
-        font-size: 45px;
+        font-size: 65px;
     }
     .menutext, .menutext:visited
     {
-        font-size: 30px;
+        font-size: 50px;
+    }
+    #hambinput:checked + #trans, #bi, #PL
+    {
+        visibility: hidden;
     }
 }
 @media (pointer: fine)
@@ -39,10 +43,6 @@
     #tMENU
     {
         font-size: 33px;
-    }
-    .menutext, .menutext:visited
-    {
-        font-size: initial;
     }
 }
 
