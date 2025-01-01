@@ -12,6 +12,10 @@
     #menu nav
     {
         width: 100vw;
+        height: 100vh;
+        top: -100vh;
+        left: 0px;
+        transition: top 0.3s;
     }
     #tMENU
     {
@@ -21,9 +25,28 @@
     {
         font-size: 50px;
     }
-    #hambinput:checked + #trans, #bi, #PL
+    #hambinput:checked ~ #flags
     {
         visibility: hidden;
+    }
+    #hmaside
+    {
+        height: 70px;
+        width: 100%;
+    }
+    #hambicon
+    {
+        float: right;
+        margin-right: 16px;
+        margin-top: -8px;
+    }
+    #hambinput:checked + #menu nav
+    {
+        top: 0;
+    }
+    #flags
+    {  
+        top: 70px
     }
 }
 @media (pointer: fine)
@@ -31,10 +54,36 @@
     #menu nav
     {
         width: 250px;
+        top: 0;
+        left: -250px;
+        height: 100vw;
+        transition: 0.3s;
     }
     #tMENU
     {
         font-size: 33px;
+    }
+    #hmaside
+    {
+        height: 100%;
+        width: 70px;
+    }
+    #hambicon
+    {
+        margin-top: -3px;
+        margin-left: 12px;   
+    }
+    #welcsec
+    {
+        margin-top: -50px;
+    }
+    #hambinput:checked + #menu nav
+    {
+        left: 0;
+    }
+    #flags
+    {  
+        top: 0px
     }
 }
 
@@ -47,10 +96,6 @@ section
 #padleft
 {
     padding-left: 25px;
-}
-#welcsec
-{
-    margin-top: -50px;
 }
 
 h2, h3
@@ -88,13 +133,15 @@ a:visited
     font-size: smaller;
 }
 
+#mensec
+{
+    display: flex;
+}
 #hmaside
 {
     position:fixed;
     float: left;
     background-color: rgb(196, 196, 196);
-    width: 70px;
-    height: 100%;
     margin-top: -50px;
     margin-left: -98px;
 }
@@ -113,17 +160,11 @@ nav
 {
     background-color: rgb(196, 196, 196);
     width: 45px;
-    margin-top: -3px;
-    margin-left: 12px;   
 }
 #menu nav
 {
     visibility: hidden;
-    position: fixed;
-    top: 0;
-    left: -250px;
-    height: 100%;
-    transition: 0.3s;
+    position: absolute;
 }
 #hambinput
 {
@@ -132,7 +173,6 @@ nav
 #hambinput:checked + #menu nav
 {
     visibility: visible;
-    left: 0;
 }
 #hambinput:checked ~ .overlay
 {
@@ -140,9 +180,14 @@ nav
     opacity: 0.4;
 }
 
+#flags
+{  
+    position: fixed;
+    right: 0px;
+}
 #trans, #bi, #PL
 {
-    position: fixed;
+    position:absolute;
     display: flex;
     width: 25px;
     transition: transform 0.25s linear;
