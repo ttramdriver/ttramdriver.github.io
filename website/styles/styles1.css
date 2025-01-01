@@ -25,7 +25,7 @@
     {
         font-size: 50px;
     }
-    #hambinput:checked #trans, #bi, #PL
+    #hambinput:checked ~ #flags
     {
         visibility: hidden;
     }
@@ -131,7 +131,7 @@ nav
 #menu nav
 {
     visibility: hidden;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: -250px;
     height: 100%;
@@ -152,9 +152,15 @@ nav
     opacity: 0.4;
 }
 
+#flags
+{  
+    position: fixed;
+    right: 0px;
+    top: 0px
+}
 #trans, #bi, #PL
 {
-    position: fixed;
+    position:absolute;
     display: flex;
     width: 25px;
     transition: transform 0.25s linear;
