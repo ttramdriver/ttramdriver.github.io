@@ -10,12 +10,17 @@
 section
 {
     display: flex;
+    margin-top: 25px;
     margin: 50px;
-    margin-left: 80px;
+    margin-left: 90px;
 }
 #padleft
 {
     padding-left: 25px;
+}
+#welcsec
+{
+    margin-top: -50px;
 }
 
 h2, h3
@@ -30,6 +35,17 @@ a
 a:visited
 {
     color: rgb(172, 0, 172);   
+}
+.menutext, .menutext:visited
+{
+    color: white;
+    background-color: rgb(196, 196, 196);
+    text-decoration: none;
+    text-align: center;
+}
+#tMENU
+{
+    font-size: 33px;
 }
 
 .gr, .linetr, .sg
@@ -54,7 +70,7 @@ a:visited
     width: 70px;
     height: 100%;
     margin-top: -50px;
-    margin-left: -88px;
+    margin-left: -98px;
 }
 #menu
 {
@@ -112,19 +128,19 @@ nav
 }
 #trans
 {
-    top: 54px;
-    right: 50px;
+    top: 14px;
+    right: 100px;
     rotate: 13deg z;
 }
 #bi
 {
     rotate: 38deg z;
-    top: 50px;
-    right: 47px;
+    top: 40px;
+    right: 50px;
 }
 #PL
 {
     rotate: 74deg z;
-    top: 50px;
-    right: 53px;
+    top: 80px;
+    right: 13px;
 }

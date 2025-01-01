@@ -1,14 +1,25 @@
+/* i have no idea whats going on here */
+
 *
 {
+    font-family: Calibri;
     color: white;
     background-color: black;
-    font-family: Calibri;
 }
-
 
 section
 {
+    margin-top: 25px;
     margin: 50px;
+    margin-left: 90px;
+}
+#padleft
+{
+    padding-left: 25px;
+}
+#welcsec
+{
+    margin-top: -50px;
 }
 
 h2, h3
@@ -16,9 +27,93 @@ h2, h3
     font-family: Arial;
 }
 
+a
+{
+    color: lightskyblue;
+}
+a:visited
+{
+    color: rgb(172, 0, 172);   
+}
+.menutext, .menutext:visited
+{
+    color: white;
+    background-color: rgb(196, 196, 196);
+    text-decoration: none;
+    text-align: center;
+}
+
+.gr, .linetr, .sg
+{
+    color: gray;
+    font-family: monospace;
+}
+.linetr
+{
+    text-decoration: line-through;
+}
+.sg
+{
+    font-size: smaller;
+}
+
+#hmaside
+{
+    position:fixed;
+    float: left;
+    background-color: rgb(196, 196, 196);
+    width: 70px;
+    height: 100%;
+    margin-top: -50px;
+    margin-left: -98px;
+}
+#menu
+{
+    background-color: rgb(196, 196, 196);
+    display: block;
+    border: none;
+}
+nav
+{
+    visibility: hidden;
+    background-color: rgb(196, 196, 196);
+}
+#hambicon
+{
+    background-color: rgb(196, 196, 196);
+    width: 45px;
+    margin-top: -3px;
+    margin-left: 12px;   
+}
+#menu nav
+{
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 200px;
+    height: 100%;
+    transition: 0.3s;
+}
+#hambinput
+{
+    visibility: hidden;
+}
+#hambinput:checked + #menu nav
+{
+    visibility: visible;
+    left: 0;
+}
+#hambinput:checked ~ .overlay
+{
+    visibility: visible;
+    opacity: 0.4;
+}
+
 #trans, #bi, #PL
 {
-    float:right;
+    position: fixed;
+    display: flex;
     width: 25px;
     transition: transform 0.25s linear;
 }
@@ -28,22 +123,23 @@ h2, h3
 }
 #trans
 {
-    margin-top: -34px;
-    margin-right: 25px;
-    rotate: 10deg z;
+    top: 14px;
+    right: 100px;
+    rotate: 13deg z;
 }
 #bi
 {
-    rotate: 45deg z;
-    margin-top: -16px;
-    margin-right: -18px;
+    rotate: 38deg z;
+    top: 40px;
+    right: 50px;
 }
 #PL
 {
-    rotate: 80deg z;
-    margin-top: 19px;
-    margin-right: -56px;
+    rotate: 74deg z;
+    top: 80px;
+    right: 13px;
 }
+
 
 
 #hii
@@ -64,29 +160,4 @@ h2, h3
 {
     margin-right: 16%;
     margin-left: 2%;
-}
-
-a
-{
-    color: lightskyblue;
-    font-family: monospace;
-    font-size: 15px;
-}
-a:visited
-{
-    color: rgb(172, 0, 172);   
-}
-
-.gr, .linetr, .sg, #gi
-{
-    color: gray;
-    font-family: monospace;
-}
-.linetr
-{
-    text-decoration: line-through;
-}
-.sg
-{
-    font-size: smaller;
 }
