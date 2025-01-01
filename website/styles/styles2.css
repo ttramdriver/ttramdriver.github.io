@@ -22,6 +22,21 @@
         font-size: 30px;
     }
 }
+@media (pointer: fine)
+{
+    #menu nav
+    {
+        width: 250px;
+    }
+    #tMENU
+    {
+        font-size: 33px;
+    }
+    .menutext, .menutext:visited
+    {
+        font-size: initial;
+    }
+}
 
 section
 {
@@ -57,10 +72,6 @@ a:visited
     background-color: rgb(196, 196, 196);
     text-decoration: none;
     text-align: center;
-}
-#tMENU
-{
-    font-size: 33px;
 }
 
 .gr, .linetr, .sg
@@ -111,7 +122,6 @@ nav
     position: fixed;
     top: 0;
     left: -250px;
-    width: 250px;
     height: 100%;
     transition: 0.3s;
 }

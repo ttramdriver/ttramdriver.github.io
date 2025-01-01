@@ -13,10 +13,6 @@
     {
         display: block;
     }
-    #mensec
-    {
-        display: flex;
-    }
     #menu nav
     {
         width: 100vw;
@@ -30,10 +26,28 @@
         font-size: 30px;
     }
 }
+@media (pointer: fine)
+{
+    section
+    {
+        display: flex;
+    }
+    #menu nav
+    {
+        width: 250px;
+    }
+    #tMENU
+    {
+        font-size: 33px;
+    }
+    .menutext, .menutext:visited
+    {
+        font-size: initial;
+    }
+}
 
 section
 {
-    display: flex;
     margin-top: 25px;
     margin: 50px;
     margin-left: 90px;
@@ -67,10 +81,6 @@ a:visited
     text-decoration: none;
     text-align: center;
 }
-#tMENU
-{
-    font-size: 33px;
-}
 
 .gr, .linetr, .sg
 {
@@ -86,6 +96,10 @@ a:visited
     font-size: smaller;
 }
 
+#mensec
+{
+    display: flex;
+}
 #hmaside
 {
     position:fixed;
@@ -120,7 +134,6 @@ nav
     position: fixed;
     top: 0;
     left: -250px;
-    width: 250px;
     height: 100%;
     transition: 0.3s;
 }
