@@ -4,7 +4,7 @@
 {
     font-family: Calibri;
     color: white;
-    background-color: black;
+    background-color: rgb(9, 5, 15);
 }
 
 @media screen and not (orientation:landscape)
@@ -15,7 +15,7 @@
         height: 100vh;
         top: -100vh;
         left: 0px;
-        transition: 0.3s;
+        transition: top 0.3s;
     }
     #tMENU
     {
@@ -25,15 +25,10 @@
     {
         font-size: 50px;
     }
-    #hambinput:checked ~ #flags
-    {
-        visibility: hidden;
-    }
     #hmaside
     {
         height: 70px;
         width: 100%;
-        top: 50px;
     }
     #hambicon
     {
@@ -47,15 +42,17 @@
     }
     #flags
     {  
-        top: 70px;
-    }
-    #welcsec
-    {
-        margin-top: 100px;
+        position: fixed;
+        top: 30px;
+        right: -52px;
     }
 }
 @media screen and (orientation:landscape)
 {
+    section
+    {
+        display: flex;
+    }
     #menu nav
     {
         width: 250px;
@@ -78,88 +75,47 @@
         margin-top: -3px;
         margin-left: 12px;   
     }
+    #welcsec
+    {
+        margin-top: -50px;
+    }
     #hambinput:checked + #menu nav
     {
         left: 0;
     }
     #flags
     {  
-        top: 0px
+        position: fixed;
+        right: -50px;
+        top: -45px;
     }
-}
-
-section
-{
-    margin-top: 25px;
-    margin: 50px;
-    margin-left: 90px;
-}
-#padleft
-{
-    padding-left: 25px;
-}
-
-h2, h3
-{
-    font-family: Arial;
-}
-
-a
-{
-    color: lightskyblue;
-}
-a:visited
-{
-    color: rgb(172, 0, 172);   
-}
-.menutext, .menutext:visited
-{
-    color: white;
-    background-color: rgb(196, 196, 196);
-    text-decoration: none;
-    text-align: center;
-}
-
-.gr, .linetr, .sg
-{
-    color: gray;
-    font-family: monospace;
-}
-.linetr
-{
-    text-decoration: line-through;
-}
-.sg
-{
-    font-size: smaller;
 }
 
 #mensec
 {
     display: flex;
 }
+
 #hmaside
 {
     position:fixed;
     float: left;
-    background-color: rgb(196, 196, 196);
     margin-top: -50px;
     margin-left: -98px;
 }
 #menu
 {
-    background-color: rgb(196, 196, 196);
     display: block;
     border: none;
 }
 nav
 {
+    position: fixed;
+    z-index: 1;
     visibility: hidden;
-    background-color: rgb(196, 196, 196);
 }
 #hambicon
 {
-    background-color: rgb(196, 196, 196);
     width: 45px;
 }
 #menu nav
@@ -180,17 +136,67 @@ nav
     visibility: visible;
     opacity: 0.4;
 }
+.menutext, .menutext:visited
+{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+#hmaside, #menu, nav, #hambicon, .menutext, .menutext:visited
+{
+    background-color: rgb(185, 174, 209);
+}
+
+/* here start styles outside of the hamburger menu */
+
+section
+{
+    margin-top: 25px;
+    margin: 50px;
+    margin-left: 90px;
+    z-index: 1;
+}
+
+h2, h3
+{
+    font-family: Arial;
+}
+
+a
+{
+    color: lightskyblue;
+}
+a:visited
+{
+    color: rgb(172, 0, 172);   
+}
+
+.gr, .linetr, .sg
+{
+    color: gray;
+    font-family: monospace;
+}
+.linetr
+{
+    text-decoration: line-through;
+}
+.sg
+{
+    font-size: smaller;
+}
+
 
 #flags
-{  
-    position: fixed;
-    right: 0px;
+{
+    display: flex;
+    position: absolute;
+    z-index: 0;
 }
 #trans, #bi, #PL
 {
     background-color: transparent;
+    position:absolute;
     display: flex;
-    position: fixed;
     width: 25px;
     transition: transform 0.25s linear;
 }
@@ -215,30 +221,4 @@ nav
     rotate: 74deg z;
     top: 80px;
     right: 13px;
-}
-
-
-#gi
-{
-    color: gray;
-}
-
-#hii
-{
-    width: 25px;
-}
-
-#cupcake1, #cupcake2
-{
-    height: 360px;
-}
-#cupcake1
-{
-    margin-left: 16%;
-    margin-right: 2%;
-}
-#cupcake2
-{
-    margin-right: 16%;
-    margin-left: 2%;
 }

@@ -1,0 +1,245 @@
+/* i have no idea whats going on here */
+
+*
+{
+    font-family: Calibri;
+    color: white;
+    background-color: rgb(9, 5, 15);
+    z-index: 1;
+}
+
+@media screen and not (orientation:landscape)
+{
+    #menu nav
+    {
+        width: 100vw;
+        height: 100vh;
+        top: -100vh;
+        left: 0px;
+        transition: 0.3s;
+    }
+    #tMENU
+    {
+        font-size: 65px;
+    }
+    .menutext, .menutext:visited
+    {
+        font-size: 50px;
+    }
+    #hmaside
+    {
+        height: 70px;
+        width: 100%;
+        top: 50px;
+    }
+    #hambicon
+    {
+        float: right;
+        margin-right: 16px;
+        margin-top: -8px;
+    }
+    #hambinput:checked + #menu nav
+    {
+        top: 0;
+    }
+    #flags
+    {  
+        top: 70px;
+    }
+    #welcsec
+    {
+        margin-top: 100px;
+    }
+}
+@media screen and (orientation:landscape)
+{
+    #menu nav
+    {
+        width: 250px;
+        top: 0;
+        left: -250px;
+        height: 100vw;
+        transition: 0.3s;
+    }
+    #tMENU
+    {
+        font-size: 33px;
+    }
+    #hmaside
+    {
+        height: 150vh;
+        width: 70px;
+    }
+    #hambicon
+    {
+        margin-top: -3px;
+        margin-left: 12px;   
+    }
+    #hambinput:checked + #menu nav
+    {
+        left: 0;
+    }
+    #flags
+    {  
+        top: -45px;
+    }
+}
+#mensec
+{
+    display: flex;
+}
+#hmaside
+{
+    position:fixed;
+    float: left;
+    background-color: rgb(196, 196, 196);
+    margin-top: -50px;
+    margin-left: -98px;
+}
+#menu
+{
+    background-color: rgb(196, 196, 196);
+    display: block;
+    border: none;
+}
+nav
+{
+    visibility: hidden;
+    background-color: rgb(196, 196, 196);
+}
+#hambicon
+{
+    background-color: rgb(196, 196, 196);
+    width: 45px;
+}
+#menu nav
+{
+    visibility: hidden;
+    position: absolute;
+}
+#hambinput
+{
+    visibility: hidden;
+}
+#hambinput:checked + #menu nav
+{
+    visibility: visible;
+}
+#hambinput:checked ~ .overlay
+{
+    visibility: visible;
+    opacity: 0.4;
+}
+.menutext, .menutext:visited
+{
+    color: white;
+    background-color: rgb(196, 196, 196);
+    text-decoration: none;
+    text-align: center;
+}
+#hmaside, #menu, nav, #hambicon, .menutext, .menutext:visited
+{
+    background-color: rgb(185, 174, 209);
+}
+
+/* here start styles outside of the hamburger menu */
+
+#flags
+{  
+    position: absolute;
+    right: 0px;
+    z-index: 0;
+    right: -50px;
+}
+#trans, #bi, #PL
+{
+    z-index: 0;
+    background-color: transparent;
+    position: absolute;
+    display: flex;
+    width: 25px;
+    transition: transform 0.25s linear;
+}
+#trans:hover, #bi:hover, #PL:hover
+{
+    transform: rotate(360deg) scale(2.5);
+}
+#trans
+{
+    top: 14px;
+    right: 100px;
+    rotate: 13deg z;
+}
+#bi
+{
+    rotate: 38deg z;
+    top: 40px;
+    right: 50px;
+}
+#PL
+{
+    rotate: 74deg z;
+    top: 80px;
+    right: 13px;
+}
+
+section
+{
+    margin-top: 25px;
+    margin: 50px;
+    margin-left: 90px;
+}
+
+h2, h3
+{
+    font-family: Arial;
+}
+
+a
+{
+    color: lightskyblue;
+}
+a:visited
+{
+    color: rgb(172, 0, 172);   
+}
+
+.gr, .linetr, .sg
+{
+    color: gray;
+    font-family: monospace;
+}
+.linetr
+{
+    text-decoration: line-through;
+}
+.sg
+{
+    font-size: smaller;
+}
+
+
+#gi
+{
+    color: gray;
+}
+
+#hii
+{
+    width: 25px;
+}
+
+#cupcake1, #cupcake2
+{
+    height: 360px;
+}
+#cupcake1
+{
+    margin-left: 16%;
+    margin-right: 2%;
+}
+#cupcake2
+{
+    margin-right: 16%;
+    margin-left: 2%;
+}
