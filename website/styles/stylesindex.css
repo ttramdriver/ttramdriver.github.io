@@ -47,16 +47,15 @@
         top: 30px;
         right: -52px;
     }
-    #pfp
-    {
-        top: calc(100vh - 325px);
-    }
 }
 @media screen and (orientation:landscape)
 {
-    body
+    @media screen and (min-width: 1160px) and (min-height: 687px)
     {
-        overflow:hidden;
+        body 
+        {
+            overflow:hidden;
+        }
     }
     section
     {
@@ -103,10 +102,6 @@
         z-index: 0;
         position: fixed;
         bottom: 10px;
-    }
-    #pfp
-    {
-        top: calc(100vh - 200px);
     }
     #padleft
     {
@@ -182,6 +177,7 @@ img
     position: absolute;
     left: 50px;
     width: 150px;
+    top: calc(100vh - 200px);
 }
 
 /* here start styles outside of the hamburger menu */
