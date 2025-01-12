@@ -9,6 +9,11 @@
 
 @media screen and not (orientation:landscape)
 {
+    *
+    {
+        z-index: 1;
+        overflow-y: hidden;
+    }
     #menu nav
     {
         width: 100vw;
@@ -49,6 +54,10 @@
 }
 @media screen and (orientation:landscape)
 {
+    body
+    {
+        overflow:hidden;
+    }
     section
     {
         display: flex;
@@ -90,13 +99,13 @@
         top: -45px;
     }
 }
-
 #mensec
 {
     display: flex;
 }
 #hmaside
 {
+    z-index: 1;
     position:fixed;
     float: left;
     margin-top: -50px;
@@ -140,10 +149,27 @@ nav
     color: white;
     text-decoration: none;
     text-align: center;
+    margin-bottom:30px
+}
+#tMENU
+{
+    margin-bottom:60px
 }
 #hmaside, #menu, nav, #hambicon, .menutext, .menutext:visited
 {
     background-color: rgb(185, 174, 209);
+}
+
+img
+{
+    background-color: transparent;
+}
+#pfp
+{
+    position: absolute;
+    top: calc(100vh - 200px);
+    left: 50px;
+    width: 150px;
 }
 
 /* here start styles outside of the hamburger menu */
@@ -154,6 +180,12 @@ section
     margin: 50px;
     margin-left: 90px;
     z-index: 1;
+}
+footer
+{
+    z-index: 0;
+    position: fixed;
+    bottom: 10px;
 }
 #padleft
 {
@@ -187,7 +219,6 @@ a:visited
 {
     font-size: smaller;
 }
-
 
 #flags
 {
