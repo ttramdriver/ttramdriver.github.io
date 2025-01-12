@@ -224,7 +224,6 @@ a:visited
 
 #flags
 {
-    display: flex;
     position: absolute;
     z-index: 0;
 }
