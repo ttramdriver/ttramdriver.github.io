@@ -8,7 +8,7 @@
     z-index: 1;
 }
 
-@media screen and not (orientation:landscape)
+@media screen and  (orientation:landscape)
 {
     #menu nav
     {
@@ -52,7 +52,7 @@
         top: calc(100vh - 325px);
     }
 }
-@media screen and (orientation:landscape)
+@media screen and not(orientation:landscape)
 {
     body
     {
@@ -107,6 +107,10 @@
     #pfp
     {
         top: calc(100vh - 200px);
+    }
+    #padleft
+    {
+        padding-left: 25px;
     }
 }
 #mensec
@@ -188,10 +192,6 @@ section
     margin-top: 25px;
     margin: 50px;
     margin-left: 90px;
-}
-#padleft
-{
-    padding-left: 25px;
 }
 
 h2, h3
