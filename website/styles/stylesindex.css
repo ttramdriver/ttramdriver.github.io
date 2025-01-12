@@ -13,7 +13,7 @@
     #menu nav
     {
         width: 100vw;
-        height: 100vh;
+        height: 101vh;
         top: -100vh;
         left: 0px;
         transition: top 0.3s;
@@ -115,6 +115,7 @@
 }
 #hmaside
 {
+    z-index: 2;
     position:fixed;
     float: left;
     margin-top: -50px;
@@ -183,6 +184,7 @@ img
 
 section
 {
+    z-index: 0;
     margin-top: 25px;
     margin: 50px;
     margin-left: 90px;
