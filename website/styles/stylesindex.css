@@ -8,7 +8,7 @@
     z-index: 1;
 }
 
-@media screen and  (orientation:landscape)
+@media screen and not (orientation:landscape)
 {
     #menu nav
     {
@@ -48,7 +48,7 @@
         right: -52px;
     }
 }
-@media screen and not(orientation:landscape)
+@media screen and (orientation:landscape)
 {
     body
     {
