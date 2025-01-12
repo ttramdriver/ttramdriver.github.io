@@ -98,6 +98,12 @@
         right: -50px;
         top: -45px;
     }
+    footer
+    {
+        z-index: 0;
+        position: fixed;
+        bottom: 10px;
+    }
 }
 #mensec
 {
@@ -180,12 +186,6 @@ section
     margin: 50px;
     margin-left: 90px;
     z-index: 1;
-}
-footer
-{
-    z-index: 0;
-    position: fixed;
-    bottom: 10px;
 }
 #padleft
 {
