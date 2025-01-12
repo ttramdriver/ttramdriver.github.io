@@ -8,7 +8,7 @@
     z-index: 1;
 }
 
-@media screen and  (orientation:landscape)
+@media screen and not (orientation:landscape)
 {
     #menu nav
     {
@@ -52,7 +52,7 @@
         top: calc(100vh - 325px);
     }
 }
-@media screen and not(orientation:landscape)
+@media screen and (orientation:landscape)
 {
     body
     {
