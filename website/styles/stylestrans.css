@@ -5,6 +5,7 @@
     font-family: Calibri;
     color: white;
     background-color: rgb(9, 5, 15);
+    z-index: 1;
 }
 
 @media screen and not (orientation:landscape)
@@ -15,7 +16,7 @@
         height: 100vh;
         top: -100vh;
         left: 0px;
-        transition: top 0.3s;
+        transition: 0.3s;
     }
     #tMENU
     {
@@ -29,6 +30,7 @@
     {
         height: 70px;
         width: 100%;
+        top: 50px;
     }
     #hambicon
     {
@@ -42,9 +44,7 @@
     }
     #flags
     {  
-        position: fixed;
-        top: 30px;
-        right: -52px;
+        top: 45px;
     }
     #welcsec
     {
@@ -57,10 +57,6 @@
 }
 @media screen and (orientation:landscape)
 {
-    section
-    {
-        display: flex;
-    }
     #menu nav
     {
         width: 250px;
@@ -83,18 +79,12 @@
         margin-top: -3px;
         margin-left: 12px;   
     }
-    #welcsec
-    {
-        margin-top: -50px;
-    }
     #hambinput:checked + #menu nav
     {
         left: 0;
     }
     #flags
     {  
-        position: fixed;
-        right: -50px;
         top: -45px;
     }
     #pfp
@@ -102,32 +92,32 @@
         top: calc(100vh - 200px);
     }
 }
-
 #mensec
 {
     display: flex;
 }
-
 #hmaside
 {
     position:fixed;
     float: left;
+    background-color: rgb(196, 196, 196);
     margin-top: -50px;
     margin-left: -98px;
 }
 #menu
 {
+    background-color: rgb(196, 196, 196);
     display: block;
     border: none;
 }
 nav
 {
-    position: fixed;
-    z-index: 1;
     visibility: hidden;
+    background-color: rgb(196, 196, 196);
 }
 #hambicon
 {
+    background-color: rgb(196, 196, 196);
     width: 45px;
 }
 #menu nav
@@ -151,6 +141,7 @@ nav
 .menutext, .menutext:visited
 {
     color: white;
+    background-color: rgb(196, 196, 196);
     text-decoration: none;
     text-align: center;
     margin-bottom:30px
@@ -177,12 +168,50 @@ img
 
 /* here start styles outside of the hamburger menu */
 
+#flags
+{  
+    position: absolute;
+    right: 0px;
+    z-index: 0;
+    right: -50px;
+}
+#trans, #bi, #PL
+{
+    z-index: 0;
+    background-color: transparent;
+    position: absolute;
+    display: flex;
+    width: 25px;
+    transition: transform 0.25s linear;
+}
+#trans:hover, #bi:hover, #PL:hover
+{
+    transform: rotate(360deg) scale(2.5);
+}
+#trans
+{
+    top: 14px;
+    right: 100px;
+    rotate: 13deg z;
+}
+#bi
+{
+    rotate: 38deg z;
+    top: 40px;
+    right: 50px;
+}
+#PL
+{
+    rotate: 74deg z;
+    top: 80px;
+    right: 13px;
+}
+
 section
 {
     margin-top: 25px;
     margin: 50px;
     margin-left: 90px;
-    z-index: 1;
 }
 
 h2, h3
@@ -211,44 +240,6 @@ a:visited
 .sg
 {
     font-size: smaller;
-}
-
-
-#flags
-{
-    display: flex;
-    position: absolute;
-    z-index: 0;
-}
-#trans, #bi, #PL
-{
-    background-color: transparent;
-    position:absolute;
-    display: flex;
-    width: 25px;
-    transition: transform 0.25s linear;
-}
-#trans:hover, #bi:hover, #PL:hover
-{
-    transform: rotate(360deg) scale(2.5);
-}
-#trans
-{
-    top: 14px;
-    right: 100px;
-    rotate: 13deg z;
-}
-#bi
-{
-    rotate: 38deg z;
-    top: 40px;
-    right: 50px;
-}
-#PL
-{
-    rotate: 74deg z;
-    top: 80px;
-    right: 13px;
 }
 
 table
