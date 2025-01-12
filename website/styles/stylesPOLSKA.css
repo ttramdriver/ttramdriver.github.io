@@ -54,10 +54,6 @@ body
     {
         margin-top: 100px;
     }
-    #pfp
-    {
-        top: calc(100vh - 325px);
-    }
 }
 @media screen and (orientation:landscape)
 {
@@ -100,10 +96,6 @@ body
         position: fixed;
         right: -50px;
         top: -45px;
-    }
-    #pfp
-    {
-        top: calc(100vh - 200px);
     }
 }
 
@@ -174,6 +166,7 @@ img
 }
 #pfp
 {
+    top: calc(100vh - 200px);
     position: absolute;
     left: 50px;
     width: 150px;

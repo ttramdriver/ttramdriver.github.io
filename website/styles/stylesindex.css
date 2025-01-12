@@ -10,6 +10,10 @@
 
 @media screen and not (orientation:landscape)
 {
+    #welcsec
+    {
+        margin-top: 50px;
+    }
     #menu nav
     {
         width: 100vw;

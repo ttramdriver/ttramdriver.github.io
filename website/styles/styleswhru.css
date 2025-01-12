@@ -44,15 +44,13 @@
     }
     #flags
     {  
-        top: 45px;
+        position: fixed;
+        top: 30px;
+        right: -52px;
     }
     #welcsec
     {
         margin-top: 100px;
-    }
-    #pfp
-    {
-        top: calc(100vh - 325px);
     }
 }
 @media screen and (orientation:landscape)
@@ -86,10 +84,6 @@
     #flags
     {  
         top: -45px;
-    }
-    #pfp
-    {
-        top: calc(100vh - 200px);
     }
 }
 #mensec
@@ -161,6 +155,7 @@ img
 }
 #pfp
 {
+    top: calc(100vh - 200px);
     position: absolute;
     left: 50px;
     width: 150px;
@@ -178,9 +173,7 @@ iframe
 #flags
 {  
     position: absolute;
-    right: 0px;
     z-index: 0;
-    right: -50px;
 }
 #trans, #bi, #PL
 {
