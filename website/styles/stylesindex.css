@@ -51,10 +51,14 @@
         top: 30px;
         right: -52px;
     }
+    #padleft
+    {
+        margin-top: 50px;
+    }
 }
 @media screen and (orientation:landscape)
 {
-    @media screen and (min-width: 1160px) and (min-height: 687px)
+    @media screen and (min-width: 1066px) and (min-height: 723px)
     {
         body 
         {
