@@ -19,7 +19,7 @@ body
         height: 100vh;
         top: -100vh;
         left: 0px;
-        transition: top 0.3s;
+        transition: 0.3s;
     }
     #tMENU
     {
@@ -29,10 +29,11 @@ body
     {
         font-size: 50px;
     }
-    #hmaside
+    #hmaside, #menuspan
     {
         height: 70px;
         width: 100%;
+        top: 50px;
     }
     #hambicon
     {
@@ -57,10 +58,6 @@ body
 }
 @media screen and (orientation:landscape)
 {
-    section
-    {
-        display: flex;
-    }
     #menu nav
     {
         width: 250px;
@@ -73,19 +70,19 @@ body
     {
         font-size: 33px;
     }
-    #hmaside
+    #hmaside, #menuspan
     {
         height: 150vh;
         width: 70px;
     }
     #hambicon
     {
-        margin-top: -3px;
+        margin-top: 15px;
         margin-left: 12px;   
     }
-    #welcsec
+    #hambinput:checked + #menu #hambicon
     {
-        margin-top: -50px;
+        margin-top: 15px;
     }
     #hambinput:checked + #menu nav
     {
@@ -98,32 +95,44 @@ body
         top: -45px;
     }
 }
-
 #mensec
 {
     display: flex;
 }
-
 #hmaside
 {
     position:fixed;
     float: left;
+    background-color: rgb(196, 196, 196);
     margin-top: -50px;
     margin-left: -98px;
+}
+#hambinput:checked ~ #menu
+{
+    left: 0px;
+    top: 0px;
+    display: flex;
+    position: absolute;
+    border: none;
+    width: 100vw;
+    height: 100vh;
+    background: transparent;
 }
 #menu
 {
     display: block;
     border: none;
+    background: transparent;
 }
 nav
 {
-    position: fixed;
-    z-index: 1;
     visibility: hidden;
+    background-color: rgb(196, 196, 196);
 }
 #hambicon
 {
+    margin-top: -5px;
+    background-color: rgb(196, 196, 196);
     width: 45px;
 }
 #menu nav
@@ -147,6 +156,7 @@ nav
 .menutext, .menutext:visited
 {
     color: white;
+    background-color: rgb(196, 196, 196);
     text-decoration: none;
     text-align: center;
     margin-bottom:30px
@@ -155,7 +165,7 @@ nav
 {
     margin-bottom:60px
 }
-#hmaside, #menu, nav, #hambicon, .menutext, .menutext:visited
+#hmaside, #menuspan, nav, #hambicon, .menutext, .menutext:visited
 {
     background-color: rgb(185, 174, 209);
 }

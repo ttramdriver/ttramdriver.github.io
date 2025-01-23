@@ -26,7 +26,7 @@
     {
         font-size: 50px;
     }
-    #hmaside
+    #hmaside, #menuspan
     {
         height: 70px;
         width: 100%;
@@ -44,7 +44,9 @@
     }
     #flags
     {  
-        top: 45px;
+        position: fixed;
+        top: 30px;
+        right: -52px;
     }
     #welcsec
     {
@@ -65,15 +67,19 @@
     {
         font-size: 33px;
     }
-    #hmaside
+    #hmaside, #menuspan
     {
         height: 150vh;
         width: 70px;
     }
     #hambicon
     {
-        margin-top: -3px;
+        margin-top: 15px;
         margin-left: 12px;   
+    }
+    #hambinput:checked + #menu #hambicon
+    {
+        margin-top: 15px;
     }
     #hambinput:checked + #menu nav
     {
@@ -81,6 +87,8 @@
     }
     #flags
     {  
+        position: fixed;
+        right: -50px;
         top: -45px;
     }
 }
@@ -96,11 +104,22 @@
     margin-top: -50px;
     margin-left: -98px;
 }
+#hambinput:checked ~ #menu
+{
+    left: 0px;
+    top: 0px;
+    display: flex;
+    position: absolute;
+    border: none;
+    width: 100vw;
+    height: 100vh;
+    background: transparent;
+}
 #menu
 {
-    background-color: rgb(196, 196, 196);
     display: block;
     border: none;
+    background: transparent;
 }
 nav
 {
@@ -109,6 +128,7 @@ nav
 }
 #hambicon
 {
+    margin-top: -5px;
     background-color: rgb(196, 196, 196);
     width: 45px;
 }
@@ -142,7 +162,7 @@ nav
 {
     margin-bottom:60px
 }
-#hmaside, #menu, nav, #hambicon, .menutext, .menutext:visited
+#hmaside, #menuspan, nav, #hambicon, .menutext, .menutext:visited
 {
     background-color: rgb(185, 174, 209);
 }
@@ -153,10 +173,10 @@ img
 }
 #pfp
 {
+    top: calc(100vh - 200px);
     position: absolute;
     left: 50px;
     width: 150px;
-    top: calc(100vh - 200px);
 }
 
 /* here start styles outside of the hamburger menu */
