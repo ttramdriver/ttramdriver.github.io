@@ -10,6 +10,14 @@
 
 @media screen and not (orientation:landscape)
 {
+    body
+    {
+        overflow-x: hidden;
+    }
+    section
+    {
+        margin-left: 60px;
+    }
     #menu nav
     {
         width: 100vw;
@@ -35,8 +43,13 @@
     #hambicon
     {
         float: right;
-        margin-right: 16px;
-        margin-top: -8px;
+        margin-right: 10px;
+        margin-top: -5px;
+    }
+    #hambinput:checked + #menu #hambicon
+    {
+        margin-top: 15px;
+        margin-right: 25px;
     }
     #hambinput:checked + #menu nav
     {
@@ -55,6 +68,10 @@
 }
 @media screen and (orientation:landscape)
 {
+    section
+    {
+        margin-left: 125px;
+    }
     #menu nav
     {
         width: 250px;
@@ -95,6 +112,7 @@
 #mensec
 {
     display: flex;
+    margin-left: 125px;
 }
 #hmaside
 {
@@ -102,7 +120,7 @@
     float: left;
     background-color: rgb(196, 196, 196);
     margin-top: -50px;
-    margin-left: -98px;
+    margin-left: -133px;
 }
 #hambinput:checked ~ #menu
 {
@@ -222,14 +240,16 @@ img
 
 section
 {
-    margin-top: 25px;
-    margin: 50px;
-    margin-left: 90px;
+    z-index: 0;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 50px;
 }
 
 h2, h3
 {
     font-family: Arial;
+    margin-left: -10px;
 }
 
 a
