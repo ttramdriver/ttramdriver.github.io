@@ -10,6 +10,7 @@
 body
 {
     background-color: rgb(9, 5, 15);
+    zoom: 90%;
 }
 
 @media screen and not (orientation:landscape)
@@ -138,7 +139,7 @@ body
     footer
     {
         z-index: 0;
-        position: fixed;
+        position: flex;
         bottom: 10px;
     }
     #padleft
@@ -255,20 +256,6 @@ a:visited
     color: rgb(172, 0, 172);   
 }
 
-.gr, .linetr, .sg
-{
-    color: gray;
-    font-family: monospace;
-}
-.linetr
-{
-    text-decoration: line-through;
-}
-.sg
-{
-    font-size: smaller;
-}
-
 #flags
 {
     position: absolute;
@@ -305,11 +292,43 @@ a:visited
     top: 80px;
     right: 13px;
 }
+
+.gr, .linetr, .sg, .grmono
+{
+    color: gray;
+}
+.sg, .grmono
+{
+    font-family: monospace;
+}
+.sg
+{
+    font-size: x-small;
+}
+.linetr
+{
+    text-decoration: line-through;
+}
+
 .ziulty
 {
     color: rgb(160, 204, 38)
-}
+}  
 .czerwowy
 {
     color: rgb(197, 0, 0);
+}
+.zielnony
+{
+    color: rgb(51, 179, 51);
+}
+
+#footer
+{
+    margin-bottom: 0px;
+}
+
+#nobullet
+{
+    list-style-type: none;
 }

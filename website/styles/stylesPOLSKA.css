@@ -8,7 +8,7 @@
 }
 body
 {
-    overflow: hidden;
+    zoom: 90%;
 }
 
 @media screen and not (orientation:landscape)

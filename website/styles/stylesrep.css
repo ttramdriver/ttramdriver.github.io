@@ -7,6 +7,10 @@
     background-color: rgb(9, 5, 15);
     z-index: 1;
 }
+body
+{
+    zoom: 90%;
+}
 
 @media screen and not (orientation:landscape)
 {
