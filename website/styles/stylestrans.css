@@ -2,74 +2,9 @@
 
 *
 {
-    font-family: Calibri;
-    color: white;
-    background-color: rgb(9, 5, 15);
     z-index: 0;
 }
-body
-{
-    zoom: 90%;
-}
 
-@media screen and not (orientation:landscape)
-{
-    body
-    {
-        overflow-x: hidden;
-    }
-    section
-    {
-        margin-left: 60px;
-    }
-    #menu nav
-    {
-        width: 100vw;
-        height: 100vh;
-        top: -100vh;
-        left: 0px;
-        transition: 0.3s;
-    }
-    #tMENU
-    {
-        font-size: 65px;
-    }
-    .menutext, .menutext:visited
-    {
-        font-size: 50px;
-    }
-    #hmaside, #menuspan
-    {
-        height: 70px;
-        width: 100%;
-        top: 50px;
-    }
-    #hambicon
-    {
-        float: right;
-        margin-right: 10px;
-        margin-top: -5px;
-    }
-    #hambinput:checked + #menu #hambicon
-    {
-        margin-top: 15px;
-        margin-right: 25px;
-    }
-    #hambinput:checked + #menu nav
-    {
-        top: 0;
-    }
-    #flags
-    {  
-        position: fixed;
-        top: 30px;
-        right: -52px;
-    }
-    #welcsec
-    {
-        margin-top: 100px;
-    }
-}
 @media screen and (orientation:landscape)
 {
     section
@@ -186,15 +121,12 @@ nav
 .menutext, .menutext:visited
 {
     color: white;
-    background-color: rgb(196, 196, 196);
     text-decoration: none;
     text-align: center;
-    margin-bottom:30px;
     z-index: 1;
 }
 #tMENU
 {
-    margin-bottom:60px;
     z-index: 1;
 }
 #hmaside, #menuspan, nav, #hambicon, .menutext, .menutext:visited
@@ -210,10 +142,6 @@ img
 }
 #pfp
 {
-    top: calc(100vh - 200px);
-    position: absolute;
-    left: 50px;
-    width: 150px;
     z-index: 1;
 }
 

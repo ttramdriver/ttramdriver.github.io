@@ -1,0 +1,99 @@
+*
+{
+    font-family: Calibri;
+    color: white;
+    background-color: transparent;
+}
+body
+{
+    background-color: rgb(9, 5, 15);
+    zoom: 110%;
+}
+
+@media screen and not (orientation:landscape)
+{
+    #welcsec
+    {
+        margin-top: 100px;
+    }
+    body
+    {
+        overflow-x: hidden;
+        zoom: 90%;
+    }
+    section
+    {
+        margin-left: 60px;
+    }
+    #menu nav
+    {
+        width: 111dvw;
+        height: 111dvh;
+        top: -111dvh;
+        left: 0px;
+        transition: 0.3s;
+    }
+    #tMENU
+    {
+        margin-bottom: -20px !important;
+        font-size: 65px;
+    }
+    .menutext, .menutext:visited
+    {
+        font-size: 50px;
+    }
+    .menutext
+    {
+        margin-top: 40px;
+        margin-bottom: 0px;
+    }
+    #hmaside, #menuspan
+    {
+        height: 70px;
+        width: 100%;
+        top: 50px;
+    }
+    #hambicon
+    {
+        display: flex;
+        position: fixed;
+        right: 13px;
+        top: 17px;
+    }
+    #hambinput:checked + #menu nav
+    {
+        top: 0;
+    }
+    #flags
+    {  
+        position: fixed;
+        top: 30px;
+        right: -52px;
+    }
+    #welcsec
+    {
+        margin-top: 100px;
+    }
+    #padleft
+    {
+        margin-top: 50px;
+    }
+}
+
+#pfp
+{
+    top: calc(100vh - 250px);
+    position: absolute;
+    left: 50px;
+    width: 150px;
+}
+#tMENU
+{
+    margin-top: 45px;
+    margin-bottom:-30px
+}
+
+h1
+{
+    font-size: xx-large;
+}

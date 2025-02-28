@@ -2,79 +2,18 @@
 
 *
 {
-    font-family: Calibri;
-    color: white;
     z-index: 1;
-    background-color: transparent;
-}
-body
-{
-    background-color: rgb(9, 5, 15);
-    zoom: 90%;
 }
 
 @media screen and not (orientation:landscape)
 {
-    body
-    {
-        overflow-x: hidden;
-    }
-    section
-    {
-        margin-left: 60px;
-    }
     #mensec
     {
         margin-left: 90px;
     }
-    #welcsec
-    {
-        margin-top: 50px;
-    }
-    #menu nav
-    {
-        width: 100vw;
-        height: 101vh;
-        top: -100vh;
-        left: 0px;
-        transition: top 0.3s;
-    }
-    #tMENU
-    {
-        font-size: 65px;
-    }
-    .menutext, .menutext:visited
-    {
-        font-size: 50px;
-    }
-    #hmaside, #menuspan
-    {
-        height: 70px;
-        width: 100vw;
-    }
     #hambicon
     {
-        float: right;
-        margin-right: 25px;
         margin-top: -5px;
-    }
-    #hambinput:checked + #menu #hambicon
-    {
-        margin-top: 15px;
-    }
-    #hambinput:checked + #menu nav
-    {
-        top: 0;
-    }
-    #flags
-    {  
-        position: fixed;
-        top: 30px;
-        right: -52px;
-    }
-    #padleft
-    {
-        margin-top: 50px;
     }
 }
 @media screen and (orientation:landscape)
@@ -147,6 +86,10 @@ body
         padding-left: 175px;
     }
 }
+#Home
+{
+    margin-top: 82px;
+}
 #mensec
 {
     display: flex;
@@ -208,11 +151,6 @@ nav
     color: white;
     text-decoration: none;
     text-align: center;
-    margin-bottom:30px
-}
-#tMENU
-{
-    margin-bottom:60px
 }
 #hmaside, nav
 {
@@ -222,13 +160,6 @@ nav
 img
 {
     background-color: transparent;
-}
-#pfp
-{
-    position: absolute;
-    left: 50px;
-    width: 150px;
-    top: calc(100vh - 200px);
 }
 
 /* here start styles outside of the hamburger menu */
