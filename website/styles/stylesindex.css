@@ -15,15 +15,26 @@
     {
         margin-top: -5px;
     }
+    #footer
+    {
+        position:relative;
+        top: 30px;
+    }
 }
 @media screen and (orientation:landscape)
 {
-    @media screen and (min-width: 1066px) and (min-height: 723px)
+    @media screen and (min-width: 1066px) and (min-height: 670px)
     {
         body 
         {
             overflow:hidden;
         }
+        #footer
+        {
+            position: absolute;
+            top: 85vh;
+        }
+
     }
     section
     {
@@ -64,6 +75,7 @@
     #welcsec
     {
         margin-top: -50px;
+        margin-bottom: -20px;
     }
     #hambinput:checked + #menu nav
     {
@@ -252,11 +264,6 @@ a:visited
 .zielnony
 {
     color: rgb(51, 179, 51);
-}
-
-#footer
-{
-    margin-bottom: 0px;
 }
 
 #nobullet

@@ -7,7 +7,7 @@
 body
 {
     background-color: rgb(9, 5, 15);
-    zoom: 110%;
+    zoom: 100%;
 }
 
 @media screen and not (orientation:landscape)
