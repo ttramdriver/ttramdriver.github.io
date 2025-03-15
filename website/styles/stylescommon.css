@@ -7,7 +7,6 @@
 body
 {
     background-color: rgb(9, 5, 15);
-    zoom: 100%;
 }
 
 @media screen and not (orientation:landscape)
@@ -96,4 +95,56 @@ body
 h1
 {
     font-size: xx-large;
+}
+
+h2, h3
+{
+    font-family: Arial;
+    margin-left: -10px;
+}
+
+button
+{
+    border: none;
+}
+button:hover
+{
+    cursor: pointer;
+}
+
+a
+{
+    color: lightskyblue;
+}
+a:visited
+{
+    color: rgb(172, 0, 172);   
+}
+
+.dissapear, #bullet
+{
+    display: none;
+}
+
+.gr, .linetr, .sg, .grdisplay
+{
+    color: gray;
+    font-family: monospace;
+}
+.linetr
+{
+    text-decoration: line-through;
+}
+.sg
+{
+    font-size: x-small;
+}
+
+#bullet
+{
+    list-style-type: disc;
+}
+#ahanook
+{
+    margin-top: -30px;
 }

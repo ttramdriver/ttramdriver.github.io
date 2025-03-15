@@ -3,27 +3,27 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=0.5">
-        <link rel="stylesheet" href="website/styles/stylesindex.css" href= type="text/css">
-        <link rel="stylesheet" href="website/styles/stylescommon.css" href= type="text/css">
-        <meta http-equiv="Refresh" content="0; url='website/html files/main.html'" />
-        <link rel="icon" href="website/images/pfp.png">
+        <link rel="stylesheet" href="../styles/stylesindex.css" type="text/css">
+        <link rel="stylesheet" href="../styles/stylescommon.css" type="text/css">
+        <link rel="icon" href="../images/pfp.png">
         <meta name="description" content="Majka's Website">
         <title>Welcome to my website !!!!!</title>
     </head>
     <body>
+        <script src="../javascript/guziczek.js"></script>
         <section id="mensec">
             <aside id="hmaside">
                 <input type="checkbox" id="hambinput"/>
                 <label id="menu" for="hambinput">
                     <span id="menuspan">
-                        <img src="website/images/hamburg.png" id="hambicon">
+                        <img src="../images/hamburg.png" id="hambicon">
                         <nav>
                             <h1 class="menutext" id="tMENU">page navigator</h1>
-                            
+
                             <a href="index.html" class="menutext"><h1 class="menutext" id="Home">Home</h1></a>
-                            <a href="website/html files/whoareyou.html" class="menutext"><h1 class="menutext">AboutMe</h1></a>
-                            <a href="website/html files/repositories.html" class="menutext"><h1 class="menutext">Github <br>Repos</h1></a>
-                            <a href="https://github.com/majka-w-scianie"><h1 class="menutext"><img src="website/images/pfp.png" id="pfp"></h1></a>
+                            <a href="whoareyou.html" class="menutext"><h1 class="menutext">AboutMe</h1></a>
+                            <a href="repositories.html" class="menutext"><h1 class="menutext">Github <br>Repos</h1></a>
+                            <a href="https://github.com/majka-w-scianie"><h1 class="menutext"><img src="../images/pfp.png" id="pfp"></h1></a>
                         </nav>
                     </span>
                 </label>
@@ -31,9 +31,9 @@
         </section>
         <section id="flags">
             <article>
-                <a href="website/html files/transinfo.html"><img src="website/images/transgener.png" id="trans"></a>
-                <img src="website/images/bisexual.png" id="bi">
-                <a href="website/html files/POLSKA.html"><img src="website/images/Poland.png" id="PL"></a>
+                <a href="transinfo.html"><img src="../images/transgener.png" id="trans"></a>
+                <button onclick="szaroguzik()"><img src="../images/lesbiab.png" id="lesbianb"></button>
+                <a href="POLSKA.html"><img src="../images/Poland.png" id="PL"></a>
             </article>
         </section>
         <section id="welcsec" class="textsect">
@@ -44,22 +44,22 @@
             </article>
         </section>
         <section class="textsect">
-            <article> 
+            <article id="padright"> 
                 <h3>Who are you??</h3>
                 <p>I'm glad you asked, name's Maja, also known as "The™ J", or just "J"
-                <br><span class="sg">though I mostly don't use that nickname anymore</span>,
+                <span class="sg dissapear"><br>though I mostly don't use that nickname anymore</span>,
                 <br>but you can call me Majka, or Majcia :3.</p>
-                <p>I'm a  <18  year old bisexual trans girl <span class="grmono">(she/her <span class="sg">(would've guessed)</span>)</span>
-                <br>interested in computers <span class="sg">(who would've guessed)</span>.
-                <br>Also, I'm from Poland <span class="sg">(again, who would've guessed)</span>.</p>
-                As every trans girl that exists <span class="sg">(sarcasm)</span>, I like programming,
+                <p>I'm a  <18  year old lesbian trans girl <span class="grdisplay">(she/her<span class="sg dissapear"> (would've guessed)</span>)</span>
+                <br>interested in computers<span class="sg dissapear"> (who would've guessed)</span>;
+                <br>and also, I'm from Poland<span class="sg dissapear"> (again, who would've guessed)</span>.</p>
+                As every trans girl that exists<span class="sg dissapear"> (sarcasm)</span>, I like programming,
                 <br>out of all the programming languages that exist - I'm currently learning: 
                 <ul>
                     <li> GDScript [Godot, Hobby]  </li>
-                    <li> Python [School, <span class="linetr">Hobby</span>]  </li>
+                    <li> Python [School<span class="dissapear">, </span><span class="linetr dissapear">Hobby</span>]  </li>
                     <li> C [Arduino, School]  </li>
-                    <li> C++ [School]  </li>
-                    <li class="gr"> <span class="linetr">C#</span> <span class="sg">[discontinued as I don't use Unity anymore]</span>  </li>
+                    <li> C++ [School]  </li> 
+                    <li id="bullet"><span class="linetr">C#</span> <span class="sg">[discontinued as I don't use Unity anymore]</span>  </li>
                 </ul>
             </article>
             <article id="padleft" class="textsect"> 
@@ -71,7 +71,7 @@
                 <ol id="nobullet">
                     <li>Programming? ✅  </li>
                     <li>the inner workings of computers? ✅  </li>
-                    <span class="sg">(I forgot what it's named in English 😭)</span>
+                    <span class="sg dissapear">(I forgot what it's named in English 😭)</span>
                     <li>Operating systems? ✅  </li>
                     <li>How the internet works? ✅  </li>
                 </ol>
@@ -84,7 +84,7 @@
         </section>        
         <section id="footer">
             <footer>
-                <p class="sg">pfp by <a target="_blank" href="https://twitter.com/singularitttt">@singularitttt</a> on twitter (pixelized using <a target="_blank" href="https://giventofly.github.io/pixelit/#tryit">https://giventofly.github.io/pixelit/#tryit</a>)
+                <p>pfp by <a target="_blank" href="https://twitter.com/singularitttt">@singularitttt</a> on twitter (pixelized using <a target="_blank" href="https://giventofly.github.io/pixelit/#tryit">https://giventofly.github.io/pixelit/#tryit</a>)
             </footer>
         </section>
     </body>
