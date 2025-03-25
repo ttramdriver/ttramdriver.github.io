@@ -148,3 +148,31 @@ a:visited
 {
     margin-top: -30px;
 }
+
+
+#trans, #sapphic, #PL
+{
+    z-index: 0;
+    background-image: none;
+    background-color: transparent;
+    position: absolute;
+    display: flex;
+    width: 25px;
+    transition: transform 0.25s linear;
+}
+
+
+section
+{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 50px;
+}
+
+button
+{
+    position: fixed;
+    bottom: 15px;
+    left: 6px;
+    font-size: 11px;
+}

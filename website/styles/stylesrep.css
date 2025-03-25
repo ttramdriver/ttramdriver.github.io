@@ -132,16 +132,7 @@ img
     z-index: 0;
     right: -50px;
 }
-#trans, #lesbianb, #PL
-{
-    z-index: 0;
-    background-color: transparent;
-    position: absolute;
-    display: flex;
-    width: 25px;
-    transition: transform 0.25s linear;
-}
-#trans:hover, #lesbianb:hover, #PL:hover
+#trans:hover, #sapphic:hover, #PL:hover
 {
     transform: rotate(360deg) scale(2.5);
 }
@@ -151,7 +142,7 @@ img
     right: 100px;
     rotate: 13deg z;
 }
-#lesbianb
+#sapphic
 {
     rotate: 38deg z;
     top: 40px;
@@ -167,7 +158,4 @@ img
 section
 {
     z-index: 0;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-right: 50px;
 }
