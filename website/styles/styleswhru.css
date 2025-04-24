@@ -51,6 +51,19 @@
     {
         margin-top: -30px;
     }
+    #cupcake1, #cupcake2
+    {
+        height: 40vh;
+    }
+    #cupcake1
+    {
+        margin-right: 2%;
+    }
+    #cupcake2
+    {
+        margin-right: 16%;
+        margin-left: 2%;
+    }
 }
 #mensec
 {
@@ -170,19 +183,4 @@ iframe
 #hii
 {
     width: 25px;
-}
-
-#cupcake1, #cupcake2
-{
-    height: 360px;
-}
-#cupcake1
-{
-    margin-left: 16%;
-    margin-right: 2%;
-}
-#cupcake2
-{
-    margin-right: 16%;
-    margin-left: 2%;
 }

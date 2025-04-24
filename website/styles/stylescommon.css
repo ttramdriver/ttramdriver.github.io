@@ -1,6 +1,6 @@
 *
 {
-    font-family: Calibri;
+    font-family: Calibri, sans-serif;
     color: white;
     background-color: transparent;
 }
@@ -9,8 +9,16 @@ body
     background-color: rgb(9, 5, 15);
 }
 
+
 @media screen and not (orientation:landscape)
 {
+    .obrazkitel
+    {
+        width: 99%;
+        margin-left: auto;
+        margin-right: auto;
+        display: none;
+    }
     #welcsec
     {
         margin-top: 100px;
@@ -77,6 +85,24 @@ body
     {
         margin-top: 50px;
     }
+    #szaroguzikklik
+    {
+        top: 20px;
+    }
+}
+@media screen and (orientation:landscape)
+{
+    #szaroguzikklik
+    {
+        bottom: 15px;
+    }
+}
+
+section
+{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 50px;
 }
 
 #pfp
@@ -96,7 +122,6 @@ h1
 {
     font-size: xx-large;
 }
-
 h2, h3
 {
     font-family: Arial;
@@ -111,6 +136,20 @@ button:hover
 {
     cursor: pointer;
 }
+#szaroguzikklik
+{
+    position: fixed;
+    left: 6px;
+    font-size: 11px;
+}
+.dissapear, #bullet
+{
+    display: none;
+}
+#bullet
+{
+    list-style-type: disc;
+}
 
 a
 {
@@ -119,11 +158,6 @@ a
 a:visited
 {
     color: rgb(172, 0, 172);   
-}
-
-.dissapear, #bullet
-{
-    display: none;
 }
 
 .gr, .linetr, .sg, .grdisplay
@@ -140,10 +174,6 @@ a:visited
     font-size: x-small;
 }
 
-#bullet
-{
-    list-style-type: disc;
-}
 #ahanook
 {
     margin-top: -30px;
@@ -159,20 +189,4 @@ a:visited
     display: flex;
     width: 25px;
     transition: transform 0.25s linear;
-}
-
-
-section
-{
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-right: 50px;
-}
-
-button
-{
-    position: fixed;
-    bottom: 15px;
-    left: 6px;
-    font-size: 11px;
 }

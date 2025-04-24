@@ -22,4 +22,5 @@ function szaroguzik()
             x[y].style.display = "none";
         }
     }
-} 
+}
+ 
