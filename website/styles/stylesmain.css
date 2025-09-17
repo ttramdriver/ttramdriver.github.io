@@ -1,0 +1,272 @@
+/* i have no idea whats going on here */
+
+*
+{
+    z-index: 1;
+}
+
+@media screen and not (orientation:landscape)
+{
+    #mensec
+    {
+        margin-left: 90px;
+    }
+    #hambicon
+    {
+        margin-top: -5px;
+    }
+    #footer
+    {
+        position:relative;
+        top: 30px;
+    }
+}
+@media screen and (orientation:landscape)
+{
+    @media screen and (min-width: 1066px) and (min-height: 670px)
+    {
+        body 
+        {
+            overflow:hidden;
+        }
+        #footer
+        {
+            position: absolute;
+            top: 85vh;
+        }
+
+    }
+    section
+    {
+        display: flex;
+        margin-left: 125px;
+    }
+    #mensec
+    {
+        margin-left: 90px;
+    }
+    #menu nav
+    {
+        width: 250px;
+        top: 0;
+        left: -250px;
+        height: 100vw;
+        transition: 0.3s;
+    }
+    #tMENU
+    {
+        font-size: 33px;
+    }
+    #hmaside, #menuspan
+    {
+        height: 150vh;
+        width: 70px;
+    }
+    #hambicon
+    {
+        margin-top: -5px;
+        margin-left: 12px;   
+    }
+    #hambinput:checked + #menu #hambicon
+    {
+        margin-top: 15px;
+    }
+
+    #welcsec
+    {
+        margin-top: -50px;
+        margin-bottom: -20px;
+    }
+    #hambinput:checked + #menu nav
+    {
+        left: 0;
+    }
+    #flags
+    {  
+        position: fixed;
+        right: -50px;
+        top: -45px;
+    }
+    footer
+    {
+        z-index: 0;
+        position: flex;
+        bottom: 10px;
+    }
+    #padright
+    {
+        width: 500px;
+        padding-right: 175px;
+    }
+    @media screen and not (orientation:landscape)
+{
+    .obrazkitel
+    {
+        width: 99%;
+        margin-left: auto;
+        margin-right: auto;
+        display: none;
+    }
+    #welcsec
+    {
+        margin-top: 100px;
+    }
+    body
+    {
+        overflow-x: hidden;
+        zoom: 90%;
+    }
+    section
+    {
+        margin-left: 60px;
+    }
+    #menu nav
+    {
+        width: 111dvw;
+        height: 111dvh;
+        top: -111dvh;
+        left: 0px;
+        transition: 0.3s;
+    }
+    #tMENU
+    {
+        margin-bottom: -20px !important;
+        font-size: 65px;
+    }
+    .menutext, .menutext:visited
+    {
+        font-size: 50px;
+    }
+    .menutext
+    {
+        margin-top: 40px;
+        margin-bottom: 0px;
+    }
+    #hmaside, #menuspan
+    {
+        height: 70px;
+        width: 100%;
+        top: 50px;
+    }
+    #hambicon
+    {
+        display: flex;
+        position: fixed;
+        right: 13px;
+        top: 17px;
+    }
+    #hambinput:checked + #menu nav
+    {
+        top: 0;
+    }
+    #flags
+    {  
+        position: fixed;
+        top: 30px;
+        right: -52px;
+    }
+    #welcsec
+    {
+        margin-top: 100px;
+    }
+    #padleft
+    {
+        margin-top: 50px;
+    }
+    #szaroguzikklik
+    {
+        top: 20px;
+    }
+}
+@media screen and (orientation:landscape)
+{
+    #szaroguzikklik
+    {
+        bottom: 15px;
+    }
+}
+}
+#Home
+{
+    margin-top: 82px;
+}
+#mensec
+{
+    display: flex;
+}
+#hmaside
+{
+    z-index: 2;
+    position:fixed;
+    float: left;
+    margin-top: -50px;
+    margin-left: -98px;
+}
+#hambinput:checked ~ #menu
+{
+    left: 0px;
+    top: 0px;
+    display: flex;
+    position: absolute;
+    border: none;
+    width: 100vw;
+    height: 100vh;
+    background: transparent;
+}
+#menu
+{
+    display: block;
+    border: none;
+    background: transparent;
+}
+nav
+{
+    position: fixed;
+    visibility: hidden;
+}
+#hambicon
+{
+    width: 45px;
+}
+#menu nav
+{
+    visibility: hidden;
+    position: absolute;
+}
+#hambinput
+{
+    visibility: hidden;
+}
+#hambinput:checked + #menu nav
+{
+    visibility: visible;
+}
+#hambinput:checked ~ .overlay
+{
+    visibility: visible;
+    opacity: 0.4;
+}
+.menutext, .menutext:visited
+{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+#hmaside, nav
+{
+    background-color: rgb(185, 174, 209);
+}
+
+img
+{
+    background-color: transparent;
+}
+iframe
+{
+    display: flex;
+    position: fixed;
+    height: 100%;
+    width: calc(100vw - 62px);
+    padding-left: 62px;
+    top: 0px;
+}
