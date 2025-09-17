@@ -1,29 +1,21 @@
-if(window.innerHeight > window.innerWidth)
-{
-    trigger1 = 0
-}
-else
-{
-    trigger1 = 1
-}
-
+let trigger = false
 function obrazkoguzik()
 {
-    var x1 = document.getElementsByClassName("obrazkitel");
-    if (trigger1 == 0)
+    let x = document.getElementsByClassName("obrazkitel");
+    if (trigger == false)
     {
-        trigger1 = 1;
-        for(let y1 in x1)
+        trigger = true;
+        for(let y in x)
         {
-            x1[y1].style.display = "initial";
+            x[y].style.display = "initial";
         }
     } 
     else
     {
-        trigger1 = 0;
-        for(let y1 in x1)
+        trigger = false;
+        for(let y in x)
         {
-            x1[y1].style.display = "none";
+            x[y].style.display = "none";
         }
     }
 } 

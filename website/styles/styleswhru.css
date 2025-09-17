@@ -50,11 +50,7 @@
     #welcsec
     {
         margin-top: -30px;
-    }
-    #cupcake1, #cupcake2
-    {
-        height: 40vh;
-    }
+    }}
     #cupcake1
     {
         margin-right: 2%;
@@ -147,6 +143,10 @@ iframe
     height: 50vh;
 }
 
+.obrazkitel
+{
+    display: none;
+}
 #flags
 {  
     position: absolute;
@@ -183,4 +183,9 @@ iframe
 #hii
 {
     width: 25px;
+}
+
+#cupcake1, #cupcake2
+{
+    height: 40vh;
 }
