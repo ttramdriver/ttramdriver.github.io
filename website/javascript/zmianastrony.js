@@ -1,14 +1,14 @@
 function home()
 {
-    document.querySelector("#zmiana").innerHTML = "<iframe src=\"home.html\" frameborder=\"0\">"
+    document.querySelector("#zmiana").innerHTML = "<iframe src=\"website/html files/home.html\" frameborder=\"0\">"
 }
 function aboutme()
 {
-    document.querySelector("#zmiana").innerHTML = "<iframe src=\"whoareyou.html\" frameborder=\"0\">"
+    document.querySelector("#zmiana").innerHTML = "<iframe src=\"website/html files/whoareyou.html\" frameborder=\"0\">"
 }
 function gitrepos()
 {
-    document.querySelector("#zmiana").innerHTML = "<iframe src=\"repositories.html\" frameborder=\"0\">"
+    document.querySelector("#zmiana").innerHTML = "<iframe src=\"website/html files/repositories.html\" frameborder=\"0\">"
 }
 
 let bool = false;
