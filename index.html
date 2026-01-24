@@ -1,12 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>I'm not actually reworking it lmao I just put it in the archive I don't have time to work on this</title>
-</head>
-<body>
-    <h1>Site under major rework, please come back later</h1>
-    if you want to enter the old site please click <a href="archive/index.html">this link</a>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>I'm not actually reworking it lmao I just put it in the archive I don't have time to work on this</title>
+    </head>
+    <body>
+        <h1>Warning: The site is under a major rework, it's basically getting built from ground up.</h1>
+        You'll automatically get redirected to the new site in <span id="id_time">10</span> seconds.
+        <br>To enter the actively worked on site now, press <a href="website/window.html">this link.</a>
+        <br>To enter the old site, press <a href="archive/index.html">this link.</a>
+    </body>
+    <script>
+    debugger
+    const timeSpan = document.querySelector('#id_time')
+    let time_left = parseInt(timeSpan.textContent)
+    setInterval(onIntervalFunc, 1000);
+
+    function onIntervalFunc()
+    {
+        time_left -= 1
+        timeSpan.textContent = time_left
+        if(time_left <= 0)
+        {
+            window.location.href = "website/window.html"
+        }
+    }
+    </script>
 </html>
