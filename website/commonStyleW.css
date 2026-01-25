@@ -1,0 +1,16 @@
+body
+{
+    background-color: rgb(195, 185, 235);
+    color: black;
+}
+
+img
+{
+    background: transparent;
+    background-color: transparent;
+}
+
+.cl_secondColor
+{
+    background-color: rgb(180, 170, 220);
+}

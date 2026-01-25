@@ -3,25 +3,47 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="commonStyleB.css" id="id_stylesheet">
+        <link rel="icon" href="https://avatars.githubusercontent.com/u/95749943?v=4">
         <title>My website</title>
     </head>
     <body>
-        <section id="id_frame" style="position: fixed; display: flex; background-color: red; left: 0px; top: 0px;">
-            test
+        <section class="cl_secondColor" id="id_frame" style="position: fixed; right: 0px; top: 0px; z-index: 10;">
+            <div>
+                
+            </div>
+            <aside style="display: block;">
+                <a href="https://github.com/ttramdriver/" target="_blank">my github profile</a> <br>
+                <a href="main.html" target="iframeWindow">main page</a> <br>
+                <a href="odjazdy.html" target="iframeWindow">BiTCityLive</a>
+            </aside>
         </section>
-        <section id="id_window" style="position: fixed; display: flex; background-color: blue; right: 0px; top: 0px; right: 0px; width: 93%; height: 100%;">
-            <iframe src="main.html" frameborder="0"></iframe>
+        <section id="id_window" style="position: fixed; display: flex; left: 0px; padding: 20px; z-index: 5;">
+            <iframe name="iframeWindow" src="main.html" frameborder="0"></iframe>
         </section>
     </body>
     <script>
         debugger
         let isLandscape = true
         let whiteMode = false
-        let idFrameSettings = getComputedStyle(document.querySelector('#id_frame'))
-        if(isLandscape == false){   idFrameSettings += " width: 100%; height: 10;"}
-        else{   idFrameSettings +=  "width: 7%; height: 100%;"}
-        document.querySelector('#id_frame').style = idFrameSettings
-        // if(whiteMode == false){ document.querySelector('body').style = "background-color: rgb(10, 5, 15);"}
-        // else{   document.querySelector('body').style = "background-color: rgb(210, 200, 255);"}
+        let frameStyle = document.querySelector('#id_frame').style
+        let windowStyle = document.querySelector('#id_window').style
+        let stylesheetHref = "";
+        if(isLandscape == false)
+        {   
+            frameStyle.width = "100%"; frameStyle.height = "10%";
+            windowStyle.width = "100%"; windowStyle.height = "90%"; windowStyle.top = "10%";
+        }
+        else
+        {   
+            frameStyle.width = "10%"; frameStyle.height = "100%";
+            windowStyle.width = "90%"; windowStyle.height = "100%"; windowStyle.top = "0px";
+        }
+        document.querySelector('iframe').style.width = windowStyle.width; 
+        document.querySelector('iframe').style.height = windowStyle.height;
+        if(whiteMode){ stylesheetHref = "commonStyleW.css";}
+        else{   stylesheetHref = "commonStyleB.css";}
+        document.querySelector('#id_stylesheet').href = stylesheetHref;
+        frames[0].document.querySelector('#id_childStylesheet').href = stylesheetHref;
     </script>
 </html>

@@ -1,0 +1,16 @@
+body
+{
+    background-color: rgb(10, 5, 15);
+    color: white;
+}
+
+img
+{
+    background: transparent;
+    background-color: transparent;
+}
+
+.cl_secondColor
+{
+    background-color: rgb(30, 15, 45);
+}
