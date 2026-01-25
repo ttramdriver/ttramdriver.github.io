@@ -18,32 +18,42 @@
                 <a href="odjazdy.html" target="iframeWindow">BiTCityLive</a>
             </aside>
         </section>
-        <section id="id_window" style="position: fixed; display: flex; left: 0px; padding: 20px; z-index: 5;">
-            <iframe name="iframeWindow" src="main.html" frameborder="0"></iframe>
+        <section id="id_window" style="position: fixed; display: flex; left: 0px; z-index: 5;">
+            <iframe name="iframeWindow" src="main.html" frameborder="0" style="padding: 20px; width: 100%; height: 100%"></iframe>
         </section>
     </body>
     <script>
         // debugger
-        let isLandscape = true
+        function changeMode()
+        {
+            if(whiteMode){ stylesheetHref = "commonStyleW.css";}
+            else{   stylesheetHref = "commonStyleB.css";}
+            document.querySelector('#id_stylesheet').href = stylesheetHref;
+            frames[0].document.querySelector('#id_childStylesheet').href = stylesheetHref;
+        }
+        function orientationChange(isPortrait)
+        {
+            let frameStyle = document.querySelector('#id_frame').style
+            let windowStyle = document.querySelector('#id_window').style
+            // alert(isPortrait)
+            if(isPortrait)
+            {   
+                frameStyle.width = "100%"; frameStyle.height = "60px";
+                windowStyle.width = "100%"; windowStyle.height = "calc(100% - 60px)"; windowStyle.top = "60px";
+            }
+            else
+            {   
+                frameStyle.width = "120px"; frameStyle.height = "100%";
+                windowStyle.width = "calc(100% - 120px)"; windowStyle.height = "100%"; windowStyle.top = "0px";
+            }
+            // document.querySelector('iframe').style.width = windowStyle.width; 
+            // document.querySelector('iframe').style.height = windowStyle.height;
+        }
+        window.matchMedia("(orientation: portrait)").addEventListener("change", e => {
+            orientationChange(e.matches)
+        });
+        orientationChange(window.matchMedia("(orientation: portrait)").matches)
         let whiteMode = false
-        let frameStyle = document.querySelector('#id_frame').style
-        let windowStyle = document.querySelector('#id_window').style
         let stylesheetHref = "";
-        if(isLandscape == false)
-        {   
-            frameStyle.width = "100%"; frameStyle.height = "10%";
-            windowStyle.width = "100%"; windowStyle.height = "90%"; windowStyle.top = "10%";
-        }
-        else
-        {   
-            frameStyle.width = "10%"; frameStyle.height = "100%";
-            windowStyle.width = "90%"; windowStyle.height = "100%"; windowStyle.top = "0px";
-        }
-        document.querySelector('iframe').style.width = windowStyle.width; 
-        document.querySelector('iframe').style.height = windowStyle.height;
-        if(whiteMode){ stylesheetHref = "commonStyleW.css";}
-        else{   stylesheetHref = "commonStyleB.css";}
-        document.querySelector('#id_stylesheet').href = stylesheetHref;
-        frames[0].document.querySelector('#id_childStylesheet').href = stylesheetHref;
     </script>
 </html>
