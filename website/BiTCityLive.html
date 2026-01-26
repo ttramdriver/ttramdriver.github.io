@@ -10,7 +10,11 @@
         <title>Document</title>
     </head>
     <body>
-        <h2>This is just a test site for my project <a href="https://github.com/ttramdriver/BiTCityLive" target="_blank">BiTCityLive</a></h2>
+        <h2>This is just a test site made with <a href="https://pyscript.net" target="_blank">Pyscript</a> for my project <a href="https://github.com/ttramdriver/BiTCityLive" target="_blank">BiTCityLive</a></h2>
+        Depending on the device you're on and your internet connection — this may or may not work. <br>
+        I've noticed that loading data from ZDMiKP Bydgoszcz doesn't work on phones (on Android at least), because, from what I understand, it automatically redirects itself for some reason (God I hate working with CORS proxies).<br>
+        Currently I'm trying to find a fix for this.<br>
+        If you're on phone and something doesn't work, try to turn on "Computer mode" (or something like that) in your browser settings.<br>
         loading...
     </body>
     <py-config>
@@ -27,29 +31,21 @@
 
         async def departuresGet(stopNumber: str):
             # Checks if the specified stop is in Bydgoszcz or Toruń and sets the about to be scraped url to the stop url
-            if stopNumber[0] == "B":    url = f"https://cors-anywhere.com/http://odjazdy.zdmikp.bydgoszcz.pl/mobile/panel.aspx?previous=/mobile/search.aspx&stop={stopNumber[1:]}"   
-            elif stopNumber[0] == "T":  url = f"https://api.codetabs.com/v1/proxy?quest=http://sip.um.torun.pl:8080/panels/0/default.aspx?stop={stopNumber[1:]}"
+            if stopNumber[0] == "B":    url = f"https://cors-anywhere.com/http://odjazdy.zdmikp.bydgoszcz.pl/mobile/panel.aspx?&stop={stopNumber[1:]}"   
+            elif stopNumber[0] == "T":  url = f"https://api.codetabs.com/v1/proxy/?quest=http://sip.um.torun.pl:8080/panels/0/default.aspx?stop={stopNumber[1:]}"
 
-            # Sends the HTTP request and check if could connec
-
-                # Sends the HTTP request and check if could connect
-            #try:
-            response = await pyfetch(url)
-            #except:
-            #    response = f"Failed to connect to the URL."
-            #    print(response)
-            result = await response.text()
-            return result
-            # Checks if the request was successful
-            #if response != str(response):
-            #    if response.status_code != 200:
-            #        response = f"Failed to fetch data. Status code: {response.status_code}"
-            #        print(response)
-            
-            #if response != str(response):
-            #    return response.text
-
-            #return response
+            # Sends the HTTP request and check if successful
+            try:
+                response = await pyfetch(url)
+                if response.status != 200:
+                    print(f"Failed to fetch data. Status code: {response.status}")
+                    return None
+                result = await response.text()
+                print(result)
+                return result    
+            except Exception as e:
+                print(f"Failed to connect to the URL. Exception: {e}")
+                return None
 
         def strCleanup(departures: str):
             # This whole thing just cleans up the scraped website so that the information from it is easiely accessible by code
@@ -148,7 +144,7 @@
 
 
         if __name__ == "__main__":
-            asyncio.ensure_future(main("B13338"))
-            asyncio.ensure_future(main("T59001"))
+            asyncio.ensure_future(main("B3026"))
+            asyncio.ensure_future(main("T28202"))
         </py-script>
 </html>
