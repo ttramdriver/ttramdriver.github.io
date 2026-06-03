@@ -6,16 +6,46 @@
         <link rel="stylesheet" type="text/css" href="commonStyleB.css" id="id_stylesheet">
         <link rel="icon" href="https://avatars.githubusercontent.com/u/95749943?v=4">
         <title>My website</title>
+        <style>
+        .cl_asideElements
+        {
+            /* display: block;*/
+            margin-left: 15px;
+            margin-right: 5px;
+        }
+        ul#id_AbtMe, ul#id_Projects
+        {
+            margin-top: 8px;
+            margin-bottom: 8px;
+        }
+        #id_AbtMe li, #id_Projects li
+        {
+            margin-left: -5px;
+        }
+        #id_vAbtMe, #id_vProjects
+        {
+            display: inline-block;
+            cursor: pointer;
+            transition: transform 0.125s linear;
+        } 
+        </style>
     </head>
     <body>
         <section class="cl_secondColor" id="id_frame" style="position: fixed; right: 0px; top: 0px; z-index: 10;">
-            <div>
-                
-            </div>
-            <aside style="display: block;">
-                <a href="https://github.com/ttramdriver/" target="_blank">my github profile</a> <br>
-                <a href="main.html" target="iframeWindow">main page</a> <br>
-                <a href="BiTCityLive.html" target="iframeWindow">BiTCityLive</a>
+            <aside>
+                <a href="https://github.com/ttramdriver/" target="_blank" class="cl_asideElements" style="display: block; margin: 20px;"><img src="https://avatars.githubusercontent.com/u/95749943" id="id_pfp" style="width: 100px;"><br></a>
+
+                <span class="cl_asideElements"><span onclick="unwind('AbtMe')" id="id_vAbtMe">ⅴ</span> About Me</span><br>
+                <ul id="id_AbtMe" hidden>
+                    <li class="cl_asideElements"><a href="main.html" target="iframeWindow">main page<br></a></li>
+                    <li class="cl_asideElements"><a href="https://github.com/ttramdriver/" target="_blank">my github profile<br></a></li>
+                </ul>
+
+                <span class="cl_asideElements"><span onclick="unwind('Projects')" id="id_vProjects">ⅴ</span> Projects</span><br>
+                <ul id="id_Projects" hidden>
+                    <li class="cl_asideElements"><a href="BiTCityLive.html" target="iframeWindow">BiTCityLive<br></a></li>
+                </ul>
+                <span style="position: absolute; width: 140px; bottom: 3px; font-size: 10px; text-align: center; color: gray">click the "ⅴ" to unwind</span>
             </aside>
         </section>
         <section id="id_window" style="position: fixed; display: flex; left: 0px; z-index: 5;">
@@ -24,6 +54,19 @@
     </body>
     <script>
         // debugger
+        function unwind(sectionToUnwind)
+        {
+            let ulStr = "#id_" 
+            let sectionElement = document.querySelector(ulStr.concat(sectionToUnwind))
+            sectionElement.hidden = !sectionElement.hidden
+
+            let spanStr = "#id_v"
+            let spanV = document.querySelector(spanStr.concat(sectionToUnwind))
+            let rotateStr = ""
+            if(spanV.style.transform == "rotate(180deg)"){  rotateStr = ""}
+            else{   rotateStr = "rotate(180deg)"}
+            spanV.style.transform = rotateStr
+        }
         function changeMode()
         {
             if(whiteMode){ stylesheetHref = "commonStyleW.css";}
@@ -38,13 +81,15 @@
             // alert(isPortrait)
             if(isPortrait)
             {   
-                frameStyle.width = "100%"; frameStyle.height = "60px";
-                windowStyle.width = "100%"; windowStyle.height = "calc(100% - 60px)"; windowStyle.top = "60px";
+                document.querySelector('aside').style.display = "none";
+                frameStyle.width = "100%"; frameStyle.height = "70px";
+                windowStyle.width = "100%"; windowStyle.height = "calc(100% - 70px)"; windowStyle.top = "70px";
             }
             else
             {   
-                frameStyle.width = "120px"; frameStyle.height = "100%";
-                windowStyle.width = "calc(100% - 120px)"; windowStyle.height = "100%"; windowStyle.top = "0px";
+                document.querySelector('aside').style.display = "block";
+                frameStyle.width = "140px"; frameStyle.height = "100%";
+                windowStyle.width = "calc(100% - 140px)"; windowStyle.height = "100%"; windowStyle.top = "0px";
             }
             // document.querySelector('iframe').style.width = windowStyle.width; 
             // document.querySelector('iframe').style.height = windowStyle.height;
